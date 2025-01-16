@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiscal Standoff</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="music-toggle">
+        <img src="Assets/sound-off.png" alt="Music Off" id="music-icon">
+    </div>
+    
+    <div id="game-container">
+        <div id="menu" class="screen">
+            <h1>Fiscal Standoff</h1>
+            <div id="player-inputs">
+                <div class="input-group">
+                    <input type="text" id="player1" placeholder="Player 1 name">
+                    <button class="remove-player">✕</button>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="player2" placeholder="Player 2 name">
+                    <button class="remove-player">✕</button>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="player3" placeholder="Player 3 name">
+                    <button class="remove-player">✕</button>
+                </div>       
+                <button id="add-player">Add Player</button>
+                <button id="start-game">Start Game</button>
+            </div>
+        </div>
+        <div id="game-screen" class="screen hidden">
+            <canvas id="gameCanvas"></canvas>
+            <div id="winner-announcement" class="hidden">
+                <h2>Winner:</h2>
+                <p id="winner-name"></p>
+                <button id="play-again">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
